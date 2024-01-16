@@ -1,0 +1,15 @@
+
+# DNA ToolKit/Code testing file
+from DNAToolKit import *
+
+rndDNAStr = "ATTGCTCATTAGGTACGATC"
+
+print(validateSeq(rndDNAStr))
+
+
+# DNA ToolKit/Code testing file
+from DNAToolKit import *
+
+rndDNAStr = "ATTCGCTGAGGCCCccTaTTTAACGTAA"
+print(validateSeq(rndDNAStr))
+
