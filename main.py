@@ -7,7 +7,7 @@ rndDNAStr = "ATTGCTCATTAGGTACGATC"
 print(validateSeq(rndDNAStr))
 
 # -- Output -- #
-# ATTGCTCATTAGGTACGATC #
+# ATTGCTCATTAGGTACGATC
 # ------------ #
 
 
@@ -29,7 +29,7 @@ rndDNAStr3 = "ATTCGCTGAGGXCCccTaTTTAACGTAAX"
 print(validateSeq(rndDNAStr3))
 
 # -- Output -- #
-# False #
+# False
 # ------------ #
 
 
