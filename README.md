@@ -1,8 +1,8 @@
 # Bioinformatics-in-Python
-Learning Python for Bioinformatics
+Learning Python for Bioinformatics 💻🧬👩🏻‍🔬
 
 
-File format notebooks
+📕File format notebooks
 ---------------------
 
 The following notebooks describe and explore some common file formats used to store genomics data.  They also include Python code for parsing (and sometimes indexing) the formats.
