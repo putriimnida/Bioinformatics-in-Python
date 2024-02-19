@@ -11,7 +11,7 @@ print(validateSeq(rndDNAStr))
 # ATTGCTCATTAGGTACGATCAAAAATTCGCTTAAGCCTTAAGGCAATTTAAACGCGGCTAA
 # ------------ #
 
-# Counting a random DNA sequence for testing:
+# Counting nucleotides for testing:
 print(countNucFrequency(randDNAStr))
 
 # -- Output -- #
