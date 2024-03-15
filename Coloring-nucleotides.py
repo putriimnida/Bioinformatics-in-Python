@@ -34,7 +34,6 @@ print(f"   {''.join(['|' for c in range(len(DNAStr))])} ")
 print(f"3' {reverse_complement(DNAStr)} 5'\n" )
 
 # Output #
-# -------------- #
 # Sequence: ATTGCTCATTAGGTACGATCAAAAATTCGCTTAAGCCTTAAGGCAATTTAAACGCGGCTAA
 #[1] + Sequence Length: 61
 
@@ -44,7 +43,5 @@ print(f"3' {reverse_complement(DNAStr)} 5'\n" )
 
 #[4] + DNA String + Reverse Complement:
 #5' ATTGCTCATTAGGTACGATCAAAAATTCGCTTAAGCCTTAAGGCAATTTAAACGCGGCTAA 3'
-#   |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+    |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 #3' TTAGCCGCGTTTAAATTGCCTTAAGGCTTAAGCGAATTTTTGATCGTACCTAATGAGCAAT 5'
-
-# ------------ #
