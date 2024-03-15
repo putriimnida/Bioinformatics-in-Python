@@ -44,7 +44,7 @@ print(f"3' {reverse_complement(DNAStr)} 5'\n" )
 
 #[4] + DNA String + Reverse Complement:
 #5' ATTGCTCATTAGGTACGATCAAAAATTCGCTTAAGCCTTAAGGCAATTTAAACGCGGCTAA 3'
-    |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+#   |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 #3' TTAGCCGCGTTTAAATTGCCTTAAGGCTTAAGCGAATTTTTGATCGTACCTAATGAGCAAT 5'
 
 # ------------ #
