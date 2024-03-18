@@ -20,7 +20,8 @@ print(f'[2] + Nucleotide Frequency: {countNucFrequency(DNAStr)}\n')
 print(f'[3] + DNA/RNA Transcription: {transcription(DNAStr)}\n')
 print(f"[4] + DNA String + Reverse Complement:\n5' {DNAStr} 3'" )
 print(f"   {''.join(['|' for c in range(len(DNAStr))])} ")
-print(f"3' {reverse_complement(DNAStr)} 5'\n" )
+print(f"3' {reverse_complement(DNAStr)[::-1]} 5' [Complement]" )
+print(f"5' {reverse_complement(DNAStr)} 3' [Rev. Complement]\n" )
 
 # -- Output -- #
 # Sequence: ATTGCTCATTAGGTACGATCAAAAATTCGCTTAAGCCTTAAGGCAATTTAAACGCGGCTAA
@@ -31,5 +32,6 @@ print(f"3' {reverse_complement(DNAStr)} 5'\n" )
 # [4] + DNA String + Reverse Complement:
 # 5' ATTGCTCATTAGGTACGATCAAAAATTCGCTTAAGCCTTAAGGCAATTTAAACGCGGCTAA 3'
 #    |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-# 3' TTAGCCGCGTTTAAATTGCCTTAAGGCTTAAGCGAATTTTTGATCGTACCTAATGAGCAAT 5'
+# 3' TAACGAGTAATCCATGCTAGTTTTTAAGCGAATTCGGAATTCCGTTAAATTTGCGCCGATT 5' [Complement]
+# 5' TTAGCCGCGTTTAAATTGCCTTAAGGCTTAAGCGAATTTTTGATCGTACCTAATGAGCAAT 3' [Rev. Complement]
 # ------------ #
