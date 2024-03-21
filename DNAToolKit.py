@@ -5,8 +5,6 @@ Nucleotides = ("A", "C", "G", "T")
 DNAReverseComplement = {"A": "T", "T": "A", "G": "C", "C": "G"}
 DNAStr = "ATTGCTCATTAGGTACGATCAAAAATTCGCTTAAGCCTTAAGGCAATTTAAACGCGGCTAA"
 
-
-
 # Check the sequence to make sure it is a DNA string
 def validateSeq(dna_seq):
     tmpseq = dna_seq.upper()
@@ -58,3 +56,14 @@ def colored(seq):
             tmpStr += bcolors['reset'] + nuc
 
     return tmpStr + '\033[0;0m'
+
+
+
+# Reverse Complement
+print(f'\nSequence: {DNAStr}\n')
+print(f'[1] + Sequence Length: {len(DNAStr)}\n')
+print(f'[2] + Nucleotide Frequency: {countNucFrequency(DNAStr)}\n')
+print(f'[3] + DNA/RNA Transcription: {transcription(DNAStr)}\n')
+print(f"[4] + DNA String + Reverse Complement:\n5' {DNAStr} 3'" )
+print(f"   {''.join(['|' for c in range(len(DNAStr))])} ")
+print(f"3' {reversecomplement(DNAStr)} 5'\n" )
