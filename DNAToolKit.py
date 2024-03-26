@@ -59,11 +59,7 @@ def colored(seq):
 
 
 
-# Reverse Complement
-print(f'\nSequence: {DNAStr}\n')
-print(f'[1] + Sequence Length: {len(DNAStr)}\n')
-print(f'[2] + Nucleotide Frequency: {countNucFrequency(DNAStr)}\n')
-print(f'[3] + DNA/RNA Transcription: {transcription(DNAStr)}\n')
-print(f"[4] + DNA String + Reverse Complement:\n5' {DNAStr} 3'" )
-print(f"   {''.join(['|' for c in range(len(DNAStr))])} ")
-print(f"3' {reversecomplement(DNAStr)} 5'\n" )
+# GC Content Calculation
+def gc_content(seq):
+    return round((seq.count('C') + seq.count('G')) /len(seq) * 100)
+
