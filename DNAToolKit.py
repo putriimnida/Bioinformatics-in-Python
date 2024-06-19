@@ -86,3 +86,15 @@ def countNucFrequency(seq):
         tmpFreqDict[nuc] += 1
     return tmpFreqDict
     # return dict(collections.Counter(seq))
+
+
+
+# Function to parse a FASTA file and print sequence IDs and lengths
+def parse_fasta(file_path):
+ for record in SeqIO.parse(file_path, "fasta"):
+ print(f"ID: {record.id}")
+ print(f"Length: {len(record.seq)}\n")
+
+# Example usage
+fasta_file = "example.fasta" # Replace with your FASTA file path
+parse_fasta(fasta_file)
