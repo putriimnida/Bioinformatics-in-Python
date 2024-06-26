@@ -117,3 +117,22 @@ print(test_dna.all_proteins_from_orfs())
 
 
 
+
+
+
+# Function to fetch a sequence from NCBI and print its details
+def fetch_sequence(accession_id):
+[Entrez.email](http://entrez.email/)
+= "
+[putrira2112@gmail.com](mailto:putrira2112@gmail.com)
+" # Replace with your email
+handle = Entrez.efetch(db="nucleotide", id=accession_id, rettype="gb", retmode="text")
+sequence_data =
+[handle.read](http://handle.read/)
+()
+print(sequence_data)
+# Example usage
+accession_id = "NC_000852" # Replace with your accession ID
+fetch_sequence(accession_id)
+
+
