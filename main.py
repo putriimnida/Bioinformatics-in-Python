@@ -136,3 +136,14 @@ accession_id = "NC_000852" # Replace with your accession ID
 fetch_sequence(accession_id)
 
 
+
+# Translating DNA Sequence
+from Bio.Seq import Seq
+# Function to translate a DNA sequence into a protein sequence
+def translate_dna(dna_sequence):
+dna_seq = Seq(dna_sequence)
+protein_seq = dna_seq.translate()
+print(f"Protein Sequence: {protein_seq}")
+# Example usage
+dna_sequence = "ATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG"
+translate_dna(dna_sequence)
