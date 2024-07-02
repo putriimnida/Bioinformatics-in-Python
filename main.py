@@ -149,6 +149,7 @@ dna_sequence = "ATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG"
 translate_dna(dna_sequence)
 
 
+
 # Function to get the reverse complement of a DNA sequence
 def reverse_complement(dna_sequence):
 dna_seq = Seq(dna_sequence)
@@ -158,4 +159,4 @@ print(f"Reverse Complement: {rev_comp_seq}")
 dna_sequence = "ATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG"
 reverse_complement(dna_sequence)
 #Output:
-Reverse Complement: CTATCGGGCACCCTTTCAGCGGCCATTACAATGGCCAT
+#Reverse Complement: CTATCGGGCACCCTTTCAGCGGCCATTACAATGGCCAT
