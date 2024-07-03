@@ -160,3 +160,19 @@ dna_sequence = "ATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG"
 reverse_complement(dna_sequence)
 #Output:
 #Reverse Complement: CTATCGGGCACCCTTTCAGCGGCCATTACAATGGCCAT
+
+
+# Function to parse a GenBank file and print sequence IDs and descriptions
+def parse_genbank(file_path):
+for record in SeqIO.parse(file_path, "genbank"):
+print(f"ID: {
+[record.id](http://record.id/)
+}")
+print(f"Description: {record.description}\n")
+# Example usage
+genbank_file = "
+[example.gb](http://example.gb/)
+" # Replace with your GenBank file path
+parse_genbank(genbank_file)
+#Output:
+#ID: SCU49845 Description: Saccharomyces cerevisiae TCP1-beta gene, partial cds, and Axl2p (AXL2) and Rev7p (REV7) genes, complete cds.
