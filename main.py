@@ -165,9 +165,7 @@ reverse_complement(dna_sequence)
 # Function to parse a GenBank file and print sequence IDs and descriptions
 def parse_genbank(file_path):
 for record in SeqIO.parse(file_path, "genbank"):
-print(f"ID: {
-[record.id](http://record.id/)
-}")
+print(f"ID: {[record.id](http://record.id/)}")
 print(f"Description: {record.description}\n")
 # Example usage
 genbank_file = "
@@ -176,3 +174,20 @@ genbank_file = "
 parse_genbank(genbank_file)
 #Output:
 #ID: SCU49845 Description: Saccharomyces cerevisiae TCP1-beta gene, partial cds, and Axl2p (AXL2) and Rev7p (REV7) genes, complete cds.
+
+
+
+# Function to fetch protein data from UniProt and print details
+def fetch_protein(uniprot_id):
+handle = ExPASy.get_sprot_raw(uniprot_id)
+record = [SwissProt.read](http://swissprot.read/)
+(handle)
+print(f"ID: {record.entry_name}")
+print(f"Description: {record.description}")
+print(f"Sequence: {record.sequence}")
+# Example usage
+uniprot_id = "P12345" # Replace with your UniProt ID
+fetch_protein(uniprot_id)
+# Output:
+# ID: 1433B_HUMAN Description: 14-3-3 protein beta/alpha OS=Homo sapiens OX=9606 GN=YWHAB PE=1 SV=1 
+# Sequence: MDFKSELVQKAKLAEQAERYDDMAAAMKAVTEQGHELSNEERNLLSVAYKNVVGARRSS...
