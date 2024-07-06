@@ -191,3 +191,14 @@ fetch_protein(uniprot_id)
 # Output:
 # ID: 1433B_HUMAN Description: 14-3-3 protein beta/alpha OS=Homo sapiens OX=9606 GN=YWHAB PE=1 SV=1 
 # Sequence: MDFKSELVQKAKLAEQAERYDDMAAAMKAVTEQGHELSNEERNLLSVAYKNVVGARRSS...
+
+
+# Function to calculate the GC content of a DNA sequence
+def calculate_gc_content(dna_sequence):
+gc_content = GC(dna_sequence)
+print(f"GC Content: {gc_content:.2f}%")
+# Example usage
+dna_sequence = "ATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG"
+calculate_gc_content(dna_sequence)
+# Output:
+# GC Content: 48.78%
