@@ -202,3 +202,18 @@ dna_sequence = "ATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG"
 calculate_gc_content(dna_sequence)
 # Output:
 # GC Content: 48.78%
+
+
+# Function to find ORFs in a DNA sequence (NOT YET UNDERSTAND)
+def find_orfs(dna_sequence):
+dna_seq = Seq(dna_sequence)
+orfs = []
+for strand, nuc in [(+1, dna_seq), (-1, dna_seq.reverse_complement())]:
+for frame in range(3):
+length = 3 * ((len(nuc) - frame) // 3) 
+# Multiple of three
+for pro in nuc[frame:frame + length].translate(to_stop=False):
+if len(pro) > 100: 
+# Filter ORFs longer than 100 amino acids
+orfs.append(pro)
+return orfs
