@@ -217,3 +217,10 @@ if len(pro) > 100: 
 # Filter ORFs longer than 100 amino acids
 orfs.append(pro)
 return orfs
+# Example usage
+dna_sequence = "ATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAGATGCGT"
+orfs = find_orfs(dna_sequence)
+for i, orf in enumerate(orfs):
+print(f"ORF {i+1}: {orf}")
+# Output:
+# This will print the ORFs identified in the given DNA sequence.
