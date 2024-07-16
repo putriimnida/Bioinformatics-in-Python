@@ -224,3 +224,18 @@ for i, orf in enumerate(orfs):
 print(f"ORF {i+1}: {orf}")
 # Output:
 # This will print the ORFs identified in the given DNA sequence.
+
+
+# Function to perform pairwise sequence alignment (NOT YET UNDERSTAND)
+def align_sequences(seq1, seq2):
+ alignments = pairwise2.align.globalxx(seq1, seq2)
+ for alignment in alignments:
+ print(format_alignment(*alignment))
+# Example usage
+seq1 = "GATTACA"
+seq2 = "GCATGCU"
+align_sequences(seq1, seq2)
+# Output:
+# GATTACA || | | GCATGCU Score=4 
+# GATTACA | || | GCA-TGCU Score=4 
+
