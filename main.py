@@ -239,3 +239,15 @@ align_sequences(seq1, seq2)
 # GATTACA || | | GCATGCU Score=4 
 # GATTACA | || | GCA-TGCU Score=4 
 
+
+# Function to perform multiple sequence alignment using ClustalW (NOT YET UNDERSTAND)
+def multiple_sequence_alignment(input_file):
+clustalw_cline = ClustalwCommandline("clustalw2", infile=input_file)
+stdout, stderr = clustalw_cline()
+print(stdout)
+# Example usage
+input_file = "sequences.fasta" # Replace with your input file path
+multiple_sequence_alignment(input_file)
+# Output: 
+# The ClustalW output will display the multiple sequence alignment results in the terminal
+
